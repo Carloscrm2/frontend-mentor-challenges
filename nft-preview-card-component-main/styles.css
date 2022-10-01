@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+/*mobile design*/
+@media(max-width: 375px) {
+    * {
+        font-family: 'Outfit', sans-serif;
+    }
+
+    body{
+        background-color: hsl(217, 54%, 11%);
+        margin: 0;
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .main-BG{
+        background-color:  hsl(216, 50%, 16%);
+        border: 2px solid  hsl(216, 50%, 16%); 
+        border-radius: 10px;
+        width: 30em;
+        height: 35em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 1px 30px;
+    }
+
+    img{
+        width: 17rem;
+        height: 17rem;
+        border-radius: 10px;
+    }
+
+    h3{
+        color: hsl(0, 0%, 100%);
+        align-self:flex-start
+    }
+
+    p{
+        color: hsl(0, 0%, 100%);
+        font-size: 15px;
+        font-weight: 300;
+        align-self: flex-start;
+    }
+
+    .icon-ethereum{
+        display: flex;
+        gap: 10px;
+        
+        
+    }
+
+    .icon-ethereum span{
+        color: hsl(178, 100%, 50%);
+        font-weight: 600;
+    }
+
+    hr{
+        border: none;
+        border: 1px solid hsl(215, 32%, 27%);
+        width: 100%;
+    }
+
+    .author{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .author img{
+        width: 2em;
+        height: 2em;
+    }
+
+
+}
