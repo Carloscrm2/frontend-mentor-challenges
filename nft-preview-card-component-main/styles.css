@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
 /*mobile design*/
-@media(max-width: 375px) {
+@media(min-width: 375px) {
     * {
         font-family: 'Outfit', sans-serif;
     }
@@ -18,7 +18,7 @@
         background-color:  hsl(216, 50%, 16%);
         border: 2px solid  hsl(216, 50%, 16%); 
         border-radius: 10px;
-        width: 32em;
+        max-width: 375px;
         height: 32em;
         display: flex;
         flex-direction: column;
@@ -47,7 +47,7 @@
 
     .icon-ethereum{
         display: flex;
-        align-items:stretch;
+        justify-content: space-between;
         gap: 10px;
         
         
@@ -56,6 +56,8 @@
     .icon-ethereum span{
         color: hsl(178, 100%, 50%);
         font-weight: 600;
+        margin-bottom: 15px;
+        margin-left: 8px;
     }
 
 
@@ -77,5 +79,88 @@
         height: 2em;
     }
 
+
+}
+
+
+/*desktop-design*/
+@media(min-width:1440px) {
+    * {
+        font-family: 'Outfit', sans-serif;
+    }
+
+    body{
+        background-color: hsl(217, 54%, 11%);
+        margin: 0;
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .main-BG{
+        background-color:  hsl(216, 50%, 16%);
+        border: 2px solid  hsl(216, 50%, 16%); 
+        border-radius: 10px;
+        max-width: 20em;
+        height: 35em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 1px 30px;
+        margin-top: 3em;
+    }
+
+
+    img{
+        width: 20rem;
+        height: 20rem;
+        border-radius: 10px;
+    }
+
+    h3{
+        color: hsl(0, 0%, 100%);
+        align-self:flex-start
+    }
+
+    p{
+        color: hsl(0, 0%, 100%);
+        font-size: 18px;
+        font-weight: 300;
+        align-self: flex-start;
+    }
+
+    .icon-ethereum{
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+        
+    }
+
+    .icon-ethereum span{
+        color: hsl(178, 100%, 50%);
+        font-weight: 600;
+        margin-bottom: 16px;
+        margin-left: 8px;
+    }
+
+
+    hr{
+        border: none;
+        border: 1px solid hsl(215, 32%, 27%);
+        width: 100%;
+    }
+
+    .author{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-top: 0.5em;
+    }
+
+    .author img{
+        width: 2em;
+        height: 2em;
+    }
 
 }
