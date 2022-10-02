@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
 /*mobile design*/
-@media(min-width: 375px) {
+@media(max-width: 375px) {
     * {
         font-family: 'Outfit', sans-serif;
     }
@@ -161,6 +161,14 @@
     .author img{
         width: 2em;
         height: 2em;
+    }
+
+    .author-name{
+        color: white; 
+        margin-bottom: 1px;
+    }
+    .author-name:hover{
+        color: hsl(178, 100%, 50%);
     }
 
 }
