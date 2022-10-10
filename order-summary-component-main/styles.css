@@ -4,7 +4,7 @@
     font-family: 'Red Hat Display', sans-serif;
 }
 
-@media (min-width:375px) {
+@media (min-width:360px) {
     body{
         display: flex;
         flex-direction: column;
