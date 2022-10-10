@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+*{
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+@media (min-width:375px) {
+    body{
+        display: flex;
+        flex-direction: column;
+        background-color: hsl(225, 100%, 94%);
+        align-items: center;
+        background-image: url(/images/pattern-background-desktop.svg);
+        background-repeat: no-repeat;
+        background-size:cover;
+        background-position-y: -12em;
+    }
+
+    .container{
+        margin-top:3em;
+    }
+    .card{
+        background-color: white;
+        border-radius: 20px; 
+        width: 22em;
+        height: 35em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .card img{
+        width: 100%;
+        height: 30%;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+    .card h2{
+        color: hsl(223, 47%, 23%);
+    }
+    .card p{
+        font-size: 16px;
+        line-height: 1.6em;
+        margin: 0px 2.4em;
+        color: gray;
+    }
+
+    .plan-info{
+        display: flex;
+        align-items: center;
+        margin:2em;
+
+    }
+
+    .plan-info svg{
+        margin: 0px;
+    }
+
+
+    .price-h{
+        margin: 0px;
+        margin-right: 2em;
+    }
+
+    .price-p{
+        position: relative;
+        margin: 0px;
+        right: 1em;
+    }
+
+
+
+    .plan-info a{
+        text-decoration: underline;
+        color: hsl(245, 75%, 52%);
+        font-weight: bolder;
+    }
+
+    .card Button{
+        width: 90%;
+        height: 10%;
+        border: none;
+        border-radius: 15px;
+        background-color: hsl(245, 75%, 52%);
+        color: white;
+        font-size: large;
+        font-weight: 700;
+    }
+
+    .card h4{
+        color: cadetblue;
+        font-weight: bolder;
+        color: hsl(224, 23%, 55%);
+    }
+}
