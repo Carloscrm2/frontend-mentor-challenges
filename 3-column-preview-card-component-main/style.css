@@ -9,7 +9,7 @@
     font-family: 'Big Shoulders Display', cursive;
 }
 
-@media (min-width: 400px) {
+@media (min-width: 400px) or (min-width:365px) {
     body{
         display: flex;
         flex-direction: column;
