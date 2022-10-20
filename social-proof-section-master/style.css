@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap');
+
+.font{
+    font-family: 'League Spartan', sans-serif;
+}
+
+@media (min-width:200px) {
+    *{
+        margin:0;
+        padding: 0;
+        border: 0;
+    }
+    body{
+        display: flex;
+        justify-content: center;
+    }
+    h1, p{
+        font-family: 'League Spartan', sans-serif;
+        text-align: center;
+        color:hsl(300, 43%, 22%);
+        margin-top: 1em;
+    }
+
+    h1{
+        padding: 0 1em;
+    }
+
+    p{
+        color:hsl(303, 10%, 53%);
+        font-size: 15px;
+        line-height: 1.3em;
+        padding: 0 1.7em;
+        margin-bottom: 2em;
+    }
+
+    h4{
+        font-family: 'League Spartan', sans-serif;
+        text-align: center;
+        color:hsl(300, 43%, 22%);
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: fit-content;
+        padding: 0 1.5em;
+        margin: 5em 0;
+    }
+
+    .block{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        background-color: hsl(300, 24%, 96%);
+        border-radius: 10px;
+        margin: 0.4em 0;
+        padding: 1em 0;
+    }
+
+    .stars{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-content:space-between;
+        margin-bottom: 0.7em;
+    }
+
+    .stars > svg{
+        margin: 0 0.3em;
+    }
+
+    .review-card{
+
+        display: flex;
+        flex-direction: column;
+        background-color: hsl(300, 43%, 22%);
+        padding: 1.5em 0;
+        border-radius: 5px;
+        margin-top: 1em;
+    }
+
+    .review-card > p{
+        font-size: 15px;
+        margin: 1.5em 0;
+        text-align: left;
+        color: hsl(0, 0%, 100%);
+        font-weight: lighter;
+    }
+
+    .user-info{
+        display: flex;
+        padding-left: 1.5em;
+    }
+
+    .user-info > img{
+        margin: 0;
+        border-radius: 100%;
+        width: 2.5em;
+    }
+
+    .name{
+        display: flex;
+        flex-direction: column;
+        margin-left: 1em;
+        margin-top: 0.5em;
+    }
+    .name > span:nth-child(1){
+        font-weight: bold;
+        font-family: 'League Spartan', sans-serif;
+        color: hsl(0, 0%, 100%);
+        margin-bottom: 0.2em;
+    }
+    .name > span:nth-child(2){
+        font-family: 'League Spartan', sans-serif;
+        color: hsl(333, 80%, 67%);
+    }
+
+}
+
+@media (min-width:1440px) {
+    .container{
+        display: flex;
+        flex-direction: row;
+        border: 1px solid red;
+    }
+
+}
