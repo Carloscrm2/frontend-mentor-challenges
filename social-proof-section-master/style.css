@@ -121,7 +121,79 @@
     .container{
         display: flex;
         flex-direction: row;
-        border: 1px solid red;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    
+    .top-left{
+        max-height: 15em;
+        max-width: 20em;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        right: 8.8em;
+    }
+
+    .paragrahp{
+        width: 25em;
+    }
+
+    p,h1{
+        text-align: left;
+        /*padding-right:16em;*/
+    }
+
+    .top-rigth{
+        margin:0;
+        position: relative;
+        width: 25em;
+        left: 1.9em;
+    }
+
+    .block{
+        display: flex;
+        flex-direction: row;
+        align-content:space-between;
+        padding: 1em;
+        margin-top: 1em;
+    }
+    
+    .stars{
+        margin: 0;
+    }
+    .block > h4{
+        margin-top: 0.2em;
+        margin-left: 1.2em;
+    }
+    .block:nth-child(2){
+        position: relative;
+        left: 2em;
+    }
+
+    .block:nth-child(3){
+        position: relative;
+        left: 4em;
+    }
+
+    .buttom{
+        display: flex;
+        height: fit-content; 
+    }
+
+    .review-card{
+        width: 19em;
+        margin: 1em;
+    }
+
+    .review-card:nth-child(2){
+        position: relative;
+        top: 1em;
+    }
+
+    .review-card:nth-child(3){
+        position: relative;
+        top: 2em;
     }
 
 }
