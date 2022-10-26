@@ -21,7 +21,6 @@ body {
 }
 
 .container{
-    border: 1px solid red;
     display: flex;
     flex-direction: column;
 }
@@ -80,13 +79,77 @@ button{
     margin: 1em;
     padding: 0.8em;
     align-self: center;
+    box-shadow: 0px 10px 10px -6px black;
 }
 
-.icon {
-    display: inline-block;
-    width: 1em;
-    height: 1em;
-    stroke-width: 0;
-    stroke: currentColor;
-    fill: currentColor;
+.icons{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin-top: 2em;
+}
+
+.icons > i{
+    color: white;
+    margin: 0.5em;
+    border: 1px solid white;
+    padding: 0.5em;
+    border-radius: 100%;
+}
+
+@media (min-width:1440px) {
+
+    body{
+        min-height: 100vh;
+        display: grid;
+        place-content: center;
+        background-image: url(images/bg-desktop.svg);
+        background-size: contain;
+        background-position:inherit;
+        background-repeat: no-repeat;
+    }
+    .container{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .top{
+        background-image: none;
+    }
+
+    header > img{
+        width: 10em;
+        margin-bottom: 0;
+    }
+
+    .ilustracion{
+        position: relative;
+        width:max-content;
+    }
+
+    .bottom{
+        align-items: center;
+        justify-content: center;
+        text-align: left;
+    }
+
+    .bottom > h2{
+        padding-right: 10em;
+    }
+    .bottom > p{
+        margin-top: 1em;
+        padding-right: 6em;
+        line-height: 1.6em;
+    }
+
+    button{
+        position: relative;
+        right: 13em;
+    }
+
+    .icons{
+        position: relative;
+        align-self: flex-end;
+        right: 13em;
+    }
 }
