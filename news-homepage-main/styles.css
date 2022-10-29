@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
+
+*{
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+
+.header{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: white;
+}
+
+.logo{
+    display: inline-block;
+    font-size: 60px;
+    margin-left: 10px;
+}
+
+.nav{
+    width: 100%;
+    height: 100%;
+    position: sticky;
+    overflow: hidden;
+    background-color: white;
+}
+
+.menu a{
+    display: block;
+    padding: 30px;
+    color: hsl(240, 100%, 5%);
+}
+
+.nav{
+    max-height: 0;
+    transition: max-height .5s ease-out;
+}
+
+.hamb{
+    cursor: pointer;
+    float: right;
+    padding: 40px 20px;
+}
+
+.hamb-line {
+    background: black;
+    display: block;
+    height: 2px;
+    position: relative;
+    width: 24px;
+}
+
+.hamb-line::before,
+.hamb-line::after{
+    background: black;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+}
+
+.hamb-line::before{
+    top: 5px;
+}
+.hamb-line::after{
+    top: -5px;
+}
+
+.side-menu {
+    display: none;
+} /* Hide checkbox */
+
+.side-menu:checked ~ nav{
+    max-height: 100%;
+}
+.side-menu:checked ~ .hamb .hamb-line {
+    background: transparent;
+}
+.side-menu:checked ~ .hamb .hamb-line::before {
+    transform: rotate(-45deg);
+    top:0;
+}
+.side-menu:checked ~ .hamb .hamb-line::after {
+    transform: rotate(45deg);
+    top:0;
+}
+
+/*main*/
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 1em;
+}
+
+.main-image > img{
+    width: 21em;
+}
+
+.main-section{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.main-section > h1{
+    color: hsl(240, 100%, 5%);
+    margin-top: 0.5em;
+    padding-right: 4em;
+}
+
+.resume > p{
+    font-size: 15px;
+    color: hsl(236, 13%, 42%);
+    line-height: 1.5em;
+    margin-top: 1em;
+}
+
+button{
+    border: none;
+    color: white;
+    background-color: hsl(5, 85%, 63%);
+    padding: 1em;
+    margin-top: 1.5em;
+    width: 12em;
+}
+
+.new{
+    margin-top: 4em;
+    padding: 1em;
+    background-color: hsl(240, 100%, 5%);
+    /*display: flex;
+    flex-direction: column;
+    align-content:space-around ;*/
+}
+
+.new > h2{
+    color: hsl(35, 77%, 62%);
+    margin-bottom: 1em;
+}
+
+.new > h3{
+    color: white;
+    margin-bottom: 0.5em;
+    margin-top: 2em;
+}
+
+.new > p{
+    font-size: 15px;
+    color: hsl(36, 100%, 99%);
+    margin-bottom: 2.3em;
+    line-height: 2em;
+}
+
+.previews{
+    display: flex;
+    flex-direction: column;
+    margin-top: 4em;
+}
+
+.item{
+    display: flex;
+    margin-top: 1em;
+}
+
+.item > img{
+    width: 6em;
+}
+
+.item-content{
+    margin-left: 1.3em;
+}
+
+.item-content > p{
+    line-height: 1.5em;
+    font-size: 15px;
+    padding-right: 1em;
+    color: hsl(236, 13%, 42%);
+}
+
+.item-content > h2{
+    color: hsl(233, 8%, 79%);
+}
+
+.item-content > h3{
+    margin: 0.5em 0;
+    color: hsl(240, 100%, 5%);
+}
