@@ -249,6 +249,10 @@ button{
         padding: 30px;
         color: hsl(240, 100%, 5%);
     }
+
+    .menu a:hover{
+        color: hsl(5, 85%, 63%);
+    }
     
     .nav{
         max-height: 10px;
@@ -307,12 +311,20 @@ button{
         margin-left: 11.5em;
     }
 
+    .resume button:hover{
+        background-color: hsl(240, 100%, 5%);
+    }
+
     .new{
         width: 24em;
         height: 33.6em;
         position: relative;
         left: 50em;
         bottom: 37.3em;
+    }
+
+    .new h3:hover{
+        color: hsl(35, 77%, 62%);
     }
 
     .previews{
@@ -324,6 +336,9 @@ button{
         left: 2em;
     }
 
+    .item-content h3:hover{
+        color: hsl(5, 85%, 63%);
+    }
     .item-content > p{
         width: 16em;
     }
