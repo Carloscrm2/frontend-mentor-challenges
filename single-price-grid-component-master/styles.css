@@ -113,3 +113,68 @@ body{
     font-size: 16px;
     line-height: 1.5em;
 }
+
+@media (min-width:1400px) {
+    .card-bottom{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .card-top{
+        width: 40em;
+    }
+
+    .card-bottom{
+        width: 41.5em;
+    }
+
+    .card-top p {
+        width: 35em;
+    }
+
+    .item-1{
+        height: 15em;
+        width: 50%;
+        border-bottom-left-radius: 10px;
+    }
+
+    .item-1 h4{
+        margin-top: 1.1em;
+        margin-left: 1em;
+        margin-bottom: 1em;
+    }
+
+    .item-1 h5{
+        margin-left: 0.6em;
+    }
+
+    .item-1 p{
+        margin-top: 1em;
+        margin-left: 0.7em;
+    }
+
+    .item-1 button{
+        margin-top: 3em;
+        width: 19em;
+    }
+
+    .item-2{
+        height:14em;
+        width: 50%;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 10px;
+        padding: 2em;
+    }
+
+    .item-2 h6{
+        margin-top: 1;
+    }
+
+    .item-2 h6 p{
+        padding-left: 0.5em;
+    }
+
+    .item-2 p{
+        width: 15em;
+    }
+}
