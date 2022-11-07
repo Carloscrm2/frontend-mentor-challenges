@@ -150,7 +150,6 @@ img{
     color:hsl(0, 0%,70%);
 }
 
-
 .card-5 .main-paragraph{
     font-weight: 600;
     font-size: x-large;
@@ -160,4 +159,83 @@ img{
 
 .card-5 .second-paragraph{
     color:hsl(0, 0%,70%);
+}
+
+@media (min-width:1440px){
+    .container{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .right-container{
+        display: flex;
+        flex-direction: column;
+        margin-left: 0em;
+    }
+
+    .card{
+        margin: 0.6em 1em;
+
+    }
+    .top-cards, .bottom-cards{
+        display: flex;
+        flex-direction: row;
+        margin: 0.1em;
+    }
+
+    .card-1{
+        background-position-x: 28em;
+        width: 35em;
+    }
+
+    .card-1 .main-paragraph{
+        font-size: x-large;
+        width: 24em;
+    }
+
+    .card-1 .second-paragraph{
+        font-size:medium;
+        width: 36em;
+        line-height: 1.5em;
+    }
+    .card-2{
+        width: 16em;
+        padding-right: 0;
+    }
+
+    .card-2 .main-paragraph{
+        width: 11em;
+    }
+
+    .card-2 .second-paragraph{
+        width: 15em;
+        font-size: medium;
+    }
+
+    .card-3 .main-paragraph{
+        width: 9em;
+    }
+
+    .card-3 .second-paragraph{
+        width: 15em;
+    }
+
+    .card-4{
+        width: 35em;
+    }
+    .card-4 .main-paragraph{
+        width: 25em;
+    }
+
+    .card-4 .second-paragraph{
+        width: 36em;
+    }
+    .card-5{
+        margin-top: 1.8em;
+        width: 14em;
+    }
+    .card-5 .second-paragraph{
+        width: 14em;
+    }
+
 }
