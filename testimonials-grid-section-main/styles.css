@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+    background-color: hsl(0, 0%, 81%);
+}
+
+img{
+    border-radius: 100%;
+    width: 2.5em;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    margin: 2em 1em;
+}
+
+
+.card{
+    margin-bottom: 1.5em;
+    border-radius: 5px;
+    padding: 1em 2em;
+}
+
+.user-info{
+    display: flex;
+    margin-bottom: 1.3em;
+}
+
+.user-info span{
+    margin-left: 1em;
+    margin-top: 0.3em;
+}
+
+.user-info span > span{
+    margin-left: 0em;
+}
+
+.card-1{
+    background-image: url(images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-color: hsl(263, 55%, 52%);
+    background-position-x: 13em;
+}
+
+.card-1 .user-info img{
+    border: 3px solid hsl(263, 51%, 59%);;
+}
+
+.user-info span{
+    color: hsl(0, 0%, 100%);
+}
+
+.user-info span > span{
+    font-size: 13px;
+    color:hsl(0, 0%,70%);
+}
+
+.card-1 .main-paragraph{
+    font-weight: 600;
+    color: hsl(0, 0%, 100%);
+    width: 15em;
+}
+
+.card-1 .second-paragraph{
+    font-size: 13px;
+    font-weight: 500;
+    color: hsl(0, 0%,70%);
+    margin-right: 2.4em;
+}
+
+.card-2{
+    background-color: hsl(217, 19%, 35%);
+}
+
+.card-2 .main-paragraph{
+    font-weight: 600;
+    color: hsl(0, 0%, 100%);
+    width: 13em;
+    font-size: x-large;
+    margin-bottom: 0.5em;
+}
+
+.card-2 .second-paragraph{
+    font-size: 13px;
+    font-weight: 500;
+    color: hsl(0, 0%,70%);
+    line-height: 1.6em;
+}
+
+.card-3{
+    background-color: white;
+}
+
+.card-3 .user-info span{
+    color: hsl(217, 19%, 35%);
+}
+
+.card-3 .user-info span > span{
+    color:hsl(0, 0%,70%);
+}
+
+.card-3 .main-paragraph{
+    font-weight: 600;
+    font-size: x-large;
+    color: hsl(217, 19%, 35%);
+    margin-bottom: 0.5em;
+}
+
+.card-3 .second-paragraph{
+    color:hsl(0, 0%,70%);
+}
+
+.card-4{
+    background-color: hsl(219, 29%, 14%);
+}
+
+.card-4 .user-info img{
+    border: 3px solid hsl(263, 55%, 52%);
+}
+.card-4 .main-paragraph{
+    font-weight: 600;
+    font-size: x-large;
+    color:hsl(0, 0%, 100%);
+}
+
+.card-4 .second-paragraph{
+    color:hsl(0, 0%, 70%);
+}
+
+.card-5{
+    background-color: white;
+}
+
+.card-5 .user-info span{
+    color: hsl(217, 19%, 35%);
+}
+
+.card-5 .user-info span > span{
+    color:hsl(0, 0%,70%);
+}
+
+
+.card-5 .main-paragraph{
+    font-weight: 600;
+    font-size: x-large;
+    color: hsl(217, 19%, 35%);
+    margin-bottom: 0.5em;
+}
+
+.card-5 .second-paragraph{
+    color:hsl(0, 0%,70%);
+}
